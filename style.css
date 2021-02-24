@@ -1,0 +1,49 @@
+body {
+  background: #777;
+  background: url('http://bit.ly/backgroundTiles') repeat;
+}
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.loading-screen {
+  background: black;
+  min-width: 840px;
+  min-height: 390px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-text: center;
+}
+.loading-screen p {
+  -webkit-animation: pulse 1s linear 2s infinite alternate;
+          animation: pulse 1s linear 2s infinite alternate;
+}
+@-webkit-keyframes pulse {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
